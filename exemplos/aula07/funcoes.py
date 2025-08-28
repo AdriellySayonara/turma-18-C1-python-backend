@@ -1,13 +1,12 @@
 def soma(a, b):
-    return a + b  # devolve o resultado
+    print(a + b)   # devolve o resultado
 
-resultado = soma(5, 3)  # guardando o valor em uma variável
-print(resultado)         # 8
+soma(5, 3)  # guardando o valor em uma variável
+soma(30, 80)    
 
-print(soma(2, 4) * 2)    # 12, usando diretamente em uma expressão
-# Função que soma dois números e devolve o resultado
 
-print('--------------------------------------------------')
+
+print('-'* 50)
 
 def ola(nome):
     print(f"Olá, {nome}!")  # só executa a ação
@@ -17,7 +16,7 @@ x = ola("Bruno")
 print(x)    # None, porque a função não retornou valor
 # Função que imprime uma saudação, mas não devolve nada
 
-print('--------------------------------------------------')
+print('-'* 50)
 
 #se quiser imprimir o valor retornado, use return
 def ola2(nome):
