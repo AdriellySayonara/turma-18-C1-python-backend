@@ -1,8 +1,11 @@
-#escopo das variaveis
-
-num = 10 #variavel global
-
-def multiplica():
+#função simples
+def funcaoSimples():
+     print("Função simples executada")
      
+funcaoSimples() #chamada da função
 
-multiplica()
+#função com retorno
+def funcaoComRetorno():
+     return "Função com retorno executada"
+resultado = funcaoComRetorno() #chamada da função
+print(resultado)
