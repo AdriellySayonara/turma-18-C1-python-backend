@@ -1,3 +1,8 @@
+
+import exemplo1 
+
+criar_usuario("Ana", 25, "ana_email.com") #posicional
+
 def soma(a, b):
     print(a + b)   # devolve o resultado
 
