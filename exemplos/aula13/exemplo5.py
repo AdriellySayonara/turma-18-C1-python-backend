@@ -1,22 +1,40 @@
 #interface(contratos)
 from abc import ABC, abstractmethod
 
-class Pagamento(ABC):
+# Interface
+class Veiculo(ABC):
     @abstractmethod
-    def pagar(self, valor):
+    def ligar(self):
         pass
 
-class Pix(Pagamento):
-    def pagar(self, valor):
-        print(f"💸 Pagamento de R${valor} via Pix realizado.")
+    @abstractmethod
+    def desligar(self):
+        pass
 
-class CartaoCredito(Pagamento):
-    def pagar(self, valor):
-        print(f"💳 Pagamento de R${valor} no cartão realizado.")
+    @abstractmethod
+    def mover(self):
+        pass
 
-# Uso
-p1 = Pix()
-p2 = CartaoCredito()
-
-p1.pagar(100)
 p2.pagar(250)
+
+#Classe concreta que implementa a interface
+
+class Carro(Veiculo):
+    def ligar(self):
+        print("Carro ligado!")
+
+    def desligar(self):
+        print("Carro desligado!")
+
+    def mover(self):
+        print("O carro está andando sobre rodas.")
+
+class Barco(Veiculo):
+    def ligar(self):
+        print("Barco ligado!")
+
+    def desligar(self):
+        print("Barco desligado!")
+
+    def mover(self):
+        print("O barco está navegando na água.")

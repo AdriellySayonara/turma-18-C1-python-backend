@@ -3,16 +3,16 @@ class ContaBancaria:
         self.titular = titular
         self.saldo = saldo
 
-    def depositar(self, valor):
+    def depositar(self, valor): #metodo
         self.saldo += valor
 
-    def sacar(self, valor):
+    def sacar(self, valor): #metodo
         if valor <= self.saldo:
             self.saldo -= valor
             return True
         return False
 
-    def transferir(self, valor, outra_conta):
+    def transferir(self, valor, outra_conta): #metodo
         if self.sacar(valor):               # objeto A usa seu método
             outra_conta.depositar(valor)    # e chama método do objeto B
             print(f"Transferência de R${valor:.2f} de {self.titular} para {outra_conta.titular}")

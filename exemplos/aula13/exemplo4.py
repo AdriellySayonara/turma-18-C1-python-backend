@@ -1,18 +1,21 @@
-#classe abstratas e métodos abstratos
 from abc import ABC, abstractmethod
 
-class Veiculo(ABC):
+# Classe abstrata
+class Animal(ABC):
     @abstractmethod
-    def ligar(self):
+    def emitir_som(self):
         pass
 
-class Carro(Veiculo):
-    def ligar(self):
-        print("🚗 O carro está ligado.")
+class Cachorro(Animal):
+    def emitir_som(self):
+        return "Au au!"
 
-class Moto(Veiculo):
-    def ligar(self):
-        print("🏍️ A moto está ligada.")
+class Gato(Animal):
+    def emitir_som(self):
+        return "Miau!"
 
-v1 = Carro()
-v1.ligar()
+dog = Cachorro()
+cat = Gato()
+
+print(dog.emitir_som())  # Au au!
+print(cat.emitir_som())  # Miau!

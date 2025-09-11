@@ -1,5 +1,3 @@
-
-
 class Pessoa:
     def __init__(self, nome, idade):
         self.nome = nome
@@ -11,7 +9,7 @@ class ContaBancaria:
         self.saldo = saldo
 
     def consultar(self):
-        print(f"Conta de {self.titular.nome} | Saldo: R${self.saldo:.2f}")
+        print(f"Conta de {self.titular.nome} | Saldo: R${self.saldo:.2f} | Idade: {self.titular.idade} ")
 
 # Uso
 p1 = Pessoa("Ana", 25)                 # Criamos a pessoa
