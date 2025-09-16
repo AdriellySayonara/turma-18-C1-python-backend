@@ -14,11 +14,12 @@ class Gato(Animal):
     def som(self):
         print("Miau!")
 
+#objeto
 c1 = Cachorro("Rex")
 c2 = Gato("Mimi")
 
-c1.som()
-c2.som()
+#c1.som()
+#c2.som()
 
 
 #polimorfismo em ação
@@ -26,5 +27,8 @@ def emitir_som(animal):
     animal.som()
 
 animais = [Cachorro("Rex"), Gato("Mimi"), Animal("Genérico")]
+
 for a in animais:
     emitir_som(a)
+    
+    

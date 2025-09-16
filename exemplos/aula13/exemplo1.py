@@ -5,9 +5,10 @@ class Pessoa:
 
 p = Pessoa("Ana", 25)
 print(p.nome)   # acesso direto
-p.idade = 30    # modificação direta
-print(p.idade)
+p.nome = 'Irene'    # modificação direta
+print(p.nome)
 
+print('-' * 50)
 
 #Protegido (um underline _)
 class Conta:
@@ -21,7 +22,7 @@ c = Conta(1000)
 print(c._saldo)  # acessível, mas não recomendado
 print(c.consultar_saldo())  # forma correta
 
-
+print('-' * 50)
 
 #Privado (dois underlines __)
 

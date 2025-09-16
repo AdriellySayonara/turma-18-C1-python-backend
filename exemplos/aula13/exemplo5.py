@@ -15,26 +15,42 @@ class Veiculo(ABC):
     def mover(self):
         pass
 
-p2.pagar(250)
-
 #Classe concreta que implementa a interface
 
 class Carro(Veiculo):
     def ligar(self):
-        print("Carro ligado!")
+         return "Carro ligado!"
 
     def desligar(self):
-        print("Carro desligado!")
+        return "Carro desligado!"
 
     def mover(self):
-        print("O carro está andando sobre rodas.")
+        return "O carro está andando sobre rodas."
 
 class Barco(Veiculo):
     def ligar(self):
-        print("Barco ligado!")
+        return "Barco ligado!"
 
     def desligar(self):
-        print("Barco desligado!")
+        return "Barco desligado!"
 
     def mover(self):
-        print("O barco está navegando na água.")
+        return "O barco está navegando na água."
+
+class Moto(Veiculo):
+    def ligar(self):
+        return "Moto Ligada!"
+        
+    def desligar(self):
+        return "Moto desligada!"
+        
+    def mover(self):
+        return "Moto movida!"
+        
+carro = Carro()
+barco = Barco()
+moto = Moto()
+
+print(carro.ligar())
+print(carro.desligar())
+print(carro.mover())

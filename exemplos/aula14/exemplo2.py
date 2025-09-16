@@ -17,6 +17,6 @@ class Gerente(Funcionario):
         super().mostrar_info()
         print(f"Setor: {self.setor}")
 
-g = Gerente("Alice", 5000, "TI")
-g.mostrar_info()
+gerente = Gerente("Alice", 5000, "TI") # objeto
+gerente.mostrar_info() #metodo
 
