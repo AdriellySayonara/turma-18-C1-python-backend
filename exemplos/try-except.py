@@ -1,8 +1,6 @@
 # try/except para tratar exceções
 #try, else, except e finally
 
-
-
 try:
      a = 18
      b = 0
