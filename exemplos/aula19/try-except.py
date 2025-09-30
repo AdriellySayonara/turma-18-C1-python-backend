@@ -77,7 +77,8 @@ Ocorre quando se tenta aceder a uma chave que não existe num dicionário.
 
 # FileNotFoundError
 """
-Ocorre quando se tenta abrir ou manipular um arquivo que não existe no caminho especificado.
+Ocorre quando se tenta abrir ou manipular um arquivo que não existe no caminho 
+especificado.
 # Exemplo:
 # with open('ficheiro_que_nao_existe.txt', 'r') as f:
 #    conteudo = f.read()

@@ -19,5 +19,5 @@ def ler_arquivo_seguro(nome_arquivo):
             print("Arquivo fechado.")
 
 # Teste com um arquivo que existe e um que não existe.
-ler_arquivo_seguro("meu_documento.txt")
+ler_arquivo_seguro("exemplo.txt")
 ler_arquivo_seguro("arquivo_inexistente.txt")

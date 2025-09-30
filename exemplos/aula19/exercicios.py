@@ -1,7 +1,7 @@
 """ 
 1. Índice de Lista: Peça ao utilizador para digitar um número de 0 a 4. 
-Tente aceder a esse índice numa lista de 5 itens. Use try...except para lidar com um IndexError 
-se o número estiver fora do intervalo.
+Tente aceder a esse índice numa lista de 5 itens. Use try...except para 
+lidar com um IndexError se o número estiver fora do intervalo.
 """
 
 """
@@ -11,8 +11,9 @@ Se o nome não existir, mostre uma mensagem com KeyError.
 """
 
 """
-3. Calculadora Segura: Crie uma função que aceite três parâmetros: dois números e um operador (+, -, *, /). 
-Use try...except para lidar com ValueError (se a entrada não for numérica) 
+3. Calculadora Segura: Crie uma função que aceite três parâmetros: 
+dois números e um operador (+, -, *, /). Use try...except para lidar com 
+ValueError (se a entrada não for numérica) 
 e ZeroDivisionError (se houver divisão por zero).
 """
 
