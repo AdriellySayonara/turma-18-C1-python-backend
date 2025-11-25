@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "matricula": 1,
+        "nome": "Anderson",
+        "curso": "Python"
+    },
+    {
+        "matricula": 2,
+        "nome": "Reynan",
+        "curso": "HTML/CSS"
+    }
+]

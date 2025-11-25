@@ -37,3 +37,5 @@ def gerar_codigo(produtos):
     if not produtos:
         return 1
     return max(p.codigo for p in produtos) + 1
+
+
